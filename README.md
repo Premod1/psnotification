@@ -47,3 +47,8 @@ import PsNotification from 'psnotification';
 | message | String | The text you want to display in the notification (required). | - |
 | status | String | he status type for the notification (optional). Possible values: success, error, warning, info. | - |
 | position | String |The position of the notification on the screen (optional). Possible values: top-right, | top-left |
+
+
+//add image, public/example.png this path
+
+![Example Image](public/example.png)
