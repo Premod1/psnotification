@@ -1,0 +1,43 @@
+.notification {
+  position: fixed;
+  min-width: 250px;
+  padding: 12px;
+  border-radius: 8px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.success {
+  background-color: #4caf50;
+}
+.error {
+  background-color: #f44336;
+}
+.warning {
+  background-color: #ff9800;
+}
+.info {
+  background-color: #2196f3;
+}
+
+.top-left {
+  top: 20px;
+  left: 20px;
+}
+.top-right {
+  top: 20px;
+  right: 20px;
+}
+.bottom-left {
+  bottom: 20px;
+  left: 20px;
+}
+.bottom-right {
+  bottom: 20px;
+  right: 20px;
+}
