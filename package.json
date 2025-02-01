@@ -1,7 +1,7 @@
 {
   "name": "psnotification",
   "private": false,
-  "version": "0.1.7",
+  "version": "0.1.8",
   "types": "module",
   "main": "dist/psnotification.umd.js",
   "module": "dist/psnotification.es.js",
