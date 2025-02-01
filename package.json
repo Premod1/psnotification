@@ -1,7 +1,7 @@
 {
   "name": "psnotification",
   "private": false,
-  "version": "0.1.5",
+  "version": "0.1.7",
   "types": "module",
   "main": "dist/psnotification.umd.js",
   "module": "dist/psnotification.es.js",
@@ -10,7 +10,7 @@
       "import": "./dist/psnotification.es.js",
       "require": "./dist/psnotification.umd.js"
     },
-    "./dist/psnotification.css" : {
+    "./dist/psnotification.css": {
       "import": "./dist/psnotification.css",
       "require": "./dist/psnotification.css"
     }
@@ -29,6 +29,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.7.2",
+    "@fortawesome/free-solid-svg-icons": "^6.7.2",
+    "@fortawesome/vue-fontawesome": "^3.0.8",
     "@tailwindcss/vite": "^4.0.1",
     "vue": "^3.5.13"
   },

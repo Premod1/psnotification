@@ -1,17 +1,19 @@
 .notification {
   position: fixed;
-  min-width: 250px;
-  padding: 12px;
+  min-width: 260px;
+  max-width: 400px;
+  padding: 12px 16px;
   border-radius: 8px;
   color: white;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
   cursor: pointer;
   transition: opacity 0.3s ease-in-out;
+  font-size: 18px;
 }
 
+/* Status Colors */
 .success {
   background-color: #4caf50;
 }
@@ -24,6 +26,37 @@
 .info {
   background-color: #2196f3;
 }
+
+.icon-box {
+  width: 36px;
+  height: 36px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 12px;
+}
+
+.icon {
+  font-size: 22px;
+  font-weight: bold;
+  color: white;
+}
+
+.icon.success::before {
+  content: "✔"; 
+}
+.icon.error::before {
+  content: "✖";
+}
+.icon.warning::before {
+  content: "⚠"; 
+}
+.icon.info::before {
+  content: "ℹ"; 
+}
+
 
 .top-left {
   top: 20px;
@@ -40,4 +73,11 @@
 .bottom-right {
   bottom: 20px;
   right: 20px;
+}
+
+.fade-enter-active, .fade-leave-active {
+  transition: opacity 0.3s ease-in-out;
+}
+.fade-enter, .fade-leave-to {
+  opacity: 0;
 }

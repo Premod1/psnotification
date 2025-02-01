@@ -6,14 +6,22 @@ const props = defineProps({
   message: String,
   status: {
     type: String,
-    default: "success",
-    validator: (value) => ["success", "error", "warning", "info"].includes(value),
+    default: "",
+    validator: (value) =>
+      ["success", "error", "warning", "info"].includes(value),
   },
   position: {
     type: String,
     default: "top-right",
     validator: (value) =>
-      ["top-left", "top-right", "bottom-left", "bottom-right", "center-top", "center-bottom"].includes(value),
+      [
+        "top-left",
+        "top-right",
+        "bottom-left",
+        "bottom-right",
+        "center-top",
+        "center-bottom",
+      ].includes(value),
   },
   duration: {
     type: Number,
@@ -37,6 +45,9 @@ onMounted(() => {
       class="notification"
       :class="[status, position]"
     >
+      <div class="icon-box">
+        <span class="icon" :class="status"></span>
+      </div>
       <p>{{ message }}</p>
     </div>
   </transition>
