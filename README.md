@@ -49,6 +49,5 @@ import PsNotification from 'psnotification';
 | position | String |The position of the notification on the screen (optional). Possible values: top-right, | top-left |
 
 
-//add image, public/example.png this path
 
 ![Example Image](public/example.png)
